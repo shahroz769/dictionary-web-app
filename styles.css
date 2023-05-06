@@ -1,0 +1,287 @@
+:root {
+    --clr-black-100--: #050505;
+    --clr-black-75--: #1F1F1F;
+    --clr-black-50--: #2D2D2D;
+    --clr-black-25--: #3A3A3A;
+    --clr-grey-75--: #757575;
+    --clr-grey-50--: #E9E9E9;
+    --clr-grey-25--: #F4F4F4;
+    --clr-white-100--: #FFFFFF;
+    --clr-purple--: #A445ED;
+    --clr-red--: #FF5252;
+    --head-l-size--: 64px;
+    --head-l-line-height--: 77px;
+    --head-m-size--: 24px;
+    --head-m-line-height--: 29px;
+    --head-s-size--: 20px;
+    --head-s-line-height--: 24px;
+    --body-m-size--: 18px;
+    --body-m-line-height--: 24px;
+    --body-s-size--: 14px;
+    --body-s-line-height--: 17px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    max-width: 800px;
+    margin: 58px auto 0 auto;
+}
+
+.content{
+    padding: 0 5%;
+}
+
+h1 {
+    font-size: var(--head-l-size--);
+    line-height: var(--head-l-line-height--);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: var(--head-m-size--);
+    line-height: var(--head-m-line-height--);
+}
+
+h3 {
+    font-size: var(--head-s-size--);
+    line-height: var(--head-s-line-height--);
+}
+
+p {
+    font-size: var(--body-m-size--);
+    line-height: var(--body-m-line-height--);
+}
+
+ul li {
+    font-size: var(--body-m-size--);
+    line-height: var(--body-m-line-height--);
+    padding-left: 48px;
+    list-style-type: none;
+}
+
+ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--clr-purple--);
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+.noun h2,
+.verb h2 {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.verb p{
+    padding-left: 48px;
+}
+
+.noun, .verb{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+hr{
+    border: 1px solid var(--clr-grey-25--);
+    margin-bottom: 40px;
+}
+
+h1{
+    margin-bottom: 8px;
+}
+
+#meaning{
+    margin-bottom: 25px;
+}
+
+.noun ul{
+    margin-bottom: 40px;
+}
+
+.verb ul{
+    margin-bottom: 12px;
+}
+
+.word h2,
+#synonyms {
+    color: var(--clr-purple--);
+}
+
+#synonyms {
+    font-weight: 700;
+}
+
+form input {
+    font-size: var(--head-s-size--);
+    line-height: var(--head-s-line-height--);
+    font-weight: 700;
+}
+
+.grey {
+    color: var(--clr-grey-75--);
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    background-color: var(--clr-grey-25--);
+    display: flex;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    border-radius: 16px;
+    margin-top: 51.5px;
+    margin-bottom: 45px;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--clr-grey-25--);
+    height: 64px;
+    padding: 20px 24px;
+    border-radius: 16px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.synonyms {
+    display: flex;
+    gap: 22px;
+}
+
+.source {
+    display: flex;
+    gap: 20px;
+    text-decoration: underline;
+}
+
+.source p {
+    font-size: var(--body-s-size--);
+}
+
+select {
+    border: none;
+    outline: none;
+    /* padding: 12px; */
+    font-size: var(--body-m-size--);
+    font-weight: 700;
+}
+
+.logo img {
+    width: 32px;
+}
+
+.theme-icon img {
+    width: 20px;
+}
+
+.sound img {
+    width: 75px;
+}
+
+.search-icon img {
+    width: 16px;
+    margin-right: 24px;
+}
+
+.source img {
+    width: 12px;
+    margin-left: 6px;
+}
+
+#source-hr{
+    margin-bottom: 12px;
+}
+
+/* Rounded Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--clr-purple--);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

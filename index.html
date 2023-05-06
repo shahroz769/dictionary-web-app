@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="head">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="Dictionary Logo">
+            </div>
+            <div class="theme">
+                <select name="" id="">\
+                    <option value="">Sans Serif</option>
+                    <option value="">Serif</option>
+                    <option value="">Mono</option>
+                </select>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <div class="theme-icon">
+                    <img src="./images/icon-moon.svg" alt="Dark Theme Icon">
+                </div>
+            </div>
+        </div>
+        <form class="search" onsubmit="search(); return false">
+            <input type="text" spellcheck="false" placeholder="Search word..." required>
+            <div class="search-icon"><img src="./images/icon-search.svg" alt="Search Icon"></div>
+        </form>
+        <div class="title">
+            <div class="word">
+                <h1>keyboard</h1>
+                <h2>/ˈkiːbɔːd/</h2>
+            </div>
+            <div class="sound">
+                <img src="./images/icon-play.svg" alt="Audio Play Icon">
+            </div>
+        </div>
+        <div class="noun">
+            <div>
+                <h2>noun</h2>
+                <hr>
+            </div>
+            <h3 class="grey" id="meaning">Meaning</h3>
+            <ul>
+                <li>(etc.) A set of keys used to operate a typewriter, computer etc.</li>
+                <li>A component of many instruments including the piano, organ, and harpsichord consisting of usually
+                    black
+                    and white keys that cause different tones to be produced when struck.</li>
+                <li>A device with keys of a musical keyboard, used to control electronic sound-producing devices which
+                    may
+                    be built into or separate from the keyboard device.</li>
+            </ul>
+            <div class="synonyms">
+                <h3 class="grey">Synonyms</h3>
+                <h3 id="synonyms">electronic keyboard</h3>
+            </div>
+        </div>
+        <div class="verb">
+            <div>
+                <h2>verb</h2>
+                <hr>
+            </div>
+            <h3 class="grey" id="meaning">Meaning</h3>
+            <ul>
+                <li>To type on a computer keyboard.</li>
+            </ul>
+            <p class="grey">"Keyboarding is the part of this job I hate the most.”</p>
+        </div>
+        <hr id="source-hr">
+        <div class="source">
+            <p class="grey">Source</p>
+            <p>https://en.wiktionary.org/wiki/keyboard<img src="./images/icon-new-window.svg" alt="Source Icon"></p>
+
+        </div>
+    </div>
+</body>
+
+</html>
