@@ -62,6 +62,7 @@ p {
 ul li {
     font-size: var(--body-m-size--);
     line-height: var(--body-m-line-height--);
+    margin-bottom: 12px;
     padding-left: 48px;
     list-style-type: none;
 }
@@ -223,7 +224,7 @@ select {
 }
 
 #source-hr{
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 }
 
 /* Rounded Switch */
@@ -284,4 +285,43 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+@media screen and (width <= 500px) {
+    h1{
+        font-size: 32px;
+        line-height: 1;
+    }
+    .sound img {
+        width: 48px;
+    }
+    .noun, .verb{
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    hr{
+        margin-bottom: 32px;
+    }
+    .noun ul{
+        margin-bottom: 32px;
+    }
+    .title {
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+    .search{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    body{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    #meaning {
+        margin-bottom: 17px;
+    }
+    .source{
+        flex-direction: column;
+        gap: 0px;
+    }
 }
