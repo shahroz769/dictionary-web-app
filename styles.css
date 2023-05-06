@@ -25,13 +25,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
 body {
     max-width: 800px;
     margin: 48px auto 0 auto;
+    font-family: 'Inter';
+}
+
+.sans{
+    font-family: 'Inter';
+}
+
+.serif{
+    font-family: 'Lora';
+}
+
+.mono{
+    font-family: 'Inconsolata';
 }
 
 .content {
@@ -76,10 +88,11 @@ ul li::before {
     /* If you want it to be bold */
     display: inline-block;
     /* Needed to add space between the bullet and the text */
-    width: 1em;
+    width: 1rem;
     /* Also needed for space (tweak if needed) */
-    margin-left: -1em;
+    margin-left: -1rem;
     /* Also needed for space (tweak if needed) */
+    margin-right: 16px;
 }
 
 .noun h2,
@@ -214,6 +227,7 @@ select {
 
 .sound img {
     width: 75px;
+    cursor: pointer;
 }
 
 .search-icon img {

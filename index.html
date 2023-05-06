@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -22,9 +24,9 @@
                 <div class="dropdown">
                     <button class="dropbtn">Sans Serif</button>
                     <div class="dropdown-content">
-                        <p class="sans">Sans Serif</p>
-                        <p class="serif">Serif</p>
-                        <p class="mono">Mono</p>
+                        <p onclick="changeFont('sansSerif')" class="sans">Sans Serif</p>
+                        <p onclick="changeFont('serif')" class="serif">Serif</p>
+                        <p onclick="changeFont('mono')" class="mono">Mono</p>
                     </div>
                 </div>
                 <div><img src="./images/icon-arrow-down.svg" alt="Down Arrow"></div>
@@ -42,8 +44,8 @@
                 </div>
             </div>
         </div>
-        <form tabindex="1" class="search" onsubmit="search(); return false">
-            <input type="text" spellcheck="false" placeholder="Search word..." required>
+        <form class="search" onsubmit="search(); return false">
+            <input id="inputText" type="text" spellcheck="false" placeholder="Search word..." required>
             <div class="search-icon"><img src="./images/icon-search.svg" alt="Search Icon"></div>
         </form>
         <div class="title">
@@ -89,9 +91,12 @@
         <hr id="source-hr">
         <div class="source">
             <p class="grey">Source</p>
-            <p href="https://en.wiktionary.org/wiki/keyboard">https://en.wiktionary.org/wiki/keyboard<img src="./images/icon-new-window.svg" alt="Source Icon"></p>
+            <p href="https://en.wiktionary.org/wiki/keyboard">https://en.wiktionary.org/wiki/keyboard<img
+                    src="./images/icon-new-window.svg" alt="Source Icon"></p>
         </div>
     </div>
 </body>
+
+<script src="./app.js"></script>
 
 </html>
