@@ -376,4 +376,7 @@ input:checked+.slider:before {
     h2{
         font-size: var(--body-m-size--);
     }
+    .logo img {
+        width: 28px;
+    }
 }
