@@ -34,7 +34,7 @@ body {
     margin: 58px auto 0 auto;
 }
 
-.content{
+.content {
     padding: 0 5%;
 }
 
@@ -88,33 +88,34 @@ ul li::before {
     font-style: italic;
 }
 
-.verb p{
+.verb p {
     padding-left: 48px;
 }
 
-.noun, .verb{
+.noun,
+.verb {
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-hr{
+hr {
     border: 1px solid var(--clr-grey-25--);
     margin-bottom: 40px;
 }
 
-h1{
+h1 {
     margin-bottom: 8px;
 }
 
-#meaning{
+#meaning {
     margin-bottom: 25px;
 }
 
-.noun ul{
+.noun ul {
     margin-bottom: 40px;
 }
 
-.verb ul{
+.verb ul {
     margin-bottom: 12px;
 }
 
@@ -225,7 +226,7 @@ select {
     margin-left: 6px;
 }
 
-#source-hr{
+#source-hr {
     margin-bottom: 24px;
 }
 
@@ -290,47 +291,89 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-@media screen and (width <= 500px) {
-    h1{
+@media screen and (width <=500px) {
+    h1 {
         font-size: 32px;
         line-height: 1;
     }
+
     .sound img {
         width: 48px;
     }
-    .noun, .verb{
+
+    .noun,
+    .verb {
         margin-top: 32px;
         margin-bottom: 32px;
     }
-    hr{
+
+    hr {
         margin-bottom: 32px;
     }
-    .noun ul{
+
+    .noun ul {
         margin-bottom: 32px;
     }
+
     .title {
         margin-top: 24px;
         margin-bottom: 32px;
     }
-    .search{
+
+    .search {
         margin-top: 24px;
         margin-bottom: 24px;
     }
-    body{
+
+    body {
         margin-top: 24px;
         margin-bottom: 24px;
     }
+
     #meaning {
         margin-bottom: 17px;
     }
-    .source{
+
+    .source {
         flex-direction: column;
         gap: 0px;
     }
+
     .theme-icon img {
         margin-left: 12px;
     }
-    .switch{
+
+    .switch {
         margin-left: 33px;
+    }
+
+    .search {
+        height: 48px;
+    }
+
+    .search input {
+        height: 48px;
+    }
+
+    form input {
+        font-size: 16px;
+    }
+    p {
+        font-size: 15px;
+    }
+    ul li {
+        font-size: 15px;
+    }
+    select {
+        font-size: 15px;
+    }
+    #meaning{
+        font-size: 16px;
+    }
+    .synonyms h3{
+        font-size: 16px;
+    }
+    h2{
+        font-size: var(--body-m-size--);
     }
 }
