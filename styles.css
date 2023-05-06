@@ -208,15 +208,6 @@ form input {
     font-size: var(--body-s-size--);
 }
 
-select {
-    border: none;
-    outline: none;
-    /* padding: 12px; */
-    font-size: var(--body-m-size--);
-    font-weight: 700;
-    padding-right: 18px;
-}
-
 .logo img {
     width: 32px;
 }
@@ -247,10 +238,6 @@ select {
 
 #source-hr {
     margin-bottom: 24px;
-}
-
-form {
-    outline: 1px solid var(--clr-purple--);
 }
 
 /* Rounded Switch */
@@ -322,6 +309,8 @@ input:checked+.slider:before {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    width: 121.05px;
+    white-space: nowrap;
 }
 
 /* The container <div> - needed to position the dropdown content */

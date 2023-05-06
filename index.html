@@ -22,7 +22,7 @@
             </div>
             <div class="theme">
                 <div class="dropdown">
-                    <button class="dropbtn">Sans Serif</button>
+                    <button class="dropbtn" id="fontName">Sans Serif</button>
                     <div class="dropdown-content">
                         <p onclick="changeFont('sansSerif')" class="sans">Sans Serif</p>
                         <p onclick="changeFont('serif')" class="serif">Serif</p>
@@ -30,11 +30,6 @@
                     </div>
                 </div>
                 <div><img src="./images/icon-arrow-down.svg" alt="Down Arrow"></div>
-                <!-- <select>\
-                    <option value="">Sans Serif</option>
-                    <option value="">Serif</option>
-                    <option value="">Mono</option>
-                </select> -->
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
@@ -44,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <form class="search" onsubmit="search(); return false">
+        <form class="search" autocomplete="off" onsubmit="search(); return false">
             <input id="inputText" type="text" spellcheck="false" placeholder="Search word..." required>
             <div class="search-icon"><img src="./images/icon-search.svg" alt="Search Icon"></div>
         </form>
