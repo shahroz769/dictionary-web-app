@@ -92,7 +92,8 @@ ul li::before {
     /* Also needed for space (tweak if needed) */
     margin-left: -1rem;
     /* Also needed for space (tweak if needed) */
-    margin-right: 16px;
+    position: relative;
+    left: -12px;
 }
 
 .noun h2,
