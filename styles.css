@@ -199,6 +199,7 @@ select {
     /* padding: 12px; */
     font-size: var(--body-m-size--);
     font-weight: 700;
+    padding-right: 18px;
 }
 
 .logo img {
@@ -207,6 +208,7 @@ select {
 
 .theme-icon img {
     width: 20px;
+    margin-left: 18px;
 }
 
 .sound img {
@@ -233,6 +235,7 @@ select {
     display: inline-block;
     width: 40px;
     height: 20px;
+    margin-left: 53px;
 }
 
 .switch input {
@@ -323,5 +326,11 @@ input:checked+.slider:before {
     .source{
         flex-direction: column;
         gap: 0px;
+    }
+    .theme-icon img {
+        margin-left: 12px;
+    }
+    .switch{
+        margin-left: 33px;
     }
 }
