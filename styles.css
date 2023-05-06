@@ -21,6 +21,16 @@
     --body-s-line-height--: 17px;
 }
 
+.dark_theme {
+    --clr-black-100--: #FFFFFFFF;
+    --clr-black-75--: #757575;
+    --clr-black-50--: #E9E9E9;
+    --clr-black-25--: #F4F4F4;
+    --clr-white-100--: #050505;
+    --clr-grey-75--: #FFFFFF;
+    --clr-grey-25--: #3A3A3A;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,17 +42,18 @@ body {
     max-width: 800px;
     margin: 48px auto 0 auto;
     font-family: 'Inter';
+    background-color: var(--clr-white-100--);
 }
 
-.sans{
+.sans {
     font-family: 'Inter';
 }
 
-.serif{
+.serif {
     font-family: 'Lora';
 }
 
-.mono{
+.mono {
     font-family: 'Inconsolata';
 }
 
@@ -54,21 +65,25 @@ h1 {
     font-size: var(--head-l-size--);
     line-height: var(--head-l-line-height--);
     font-weight: 700;
+    color: var(--clr-black-100--);
 }
 
 h2 {
     font-size: var(--head-m-size--);
     line-height: var(--head-m-line-height--);
+    color: var(--clr-black-100--);
 }
 
 h3 {
     font-size: var(--head-s-size--);
     line-height: var(--head-s-line-height--);
+    color: var(--clr-black-100--);
 }
 
 p {
     font-size: var(--body-m-size--);
     line-height: var(--body-m-line-height--);
+    color: var(--clr-black-100--);
 }
 
 ul li {
@@ -77,6 +92,7 @@ ul li {
     margin-bottom: 12px;
     padding-left: 48px;
     list-style-type: none;
+    color: var(--clr-black-100--);
 }
 
 ul li::before {
@@ -100,10 +116,12 @@ ul li::before {
 .verb h2 {
     font-weight: 700;
     font-style: italic;
+    color: var(--clr-black-100--);
 }
 
 .verb p {
     padding-left: 48px;
+    color: var(--clr-black-100--);
 }
 
 .noun,
@@ -123,6 +141,7 @@ h1 {
 
 #meaning {
     margin-bottom: 25px;
+    color: var(--clr-black-100--);
 }
 
 .noun ul {
@@ -146,6 +165,7 @@ form input {
     font-size: var(--head-s-size--);
     line-height: var(--head-s-line-height--);
     font-weight: 700;
+    color: var(--clr-black-100--);
 }
 
 .grey {
@@ -196,6 +216,7 @@ form input {
 .synonyms {
     display: flex;
     gap: 22px;
+    color: var(--clr-black-100--);
 }
 
 .source {
@@ -325,7 +346,6 @@ input:checked+.slider:before {
     position: absolute;
     background-color: var(--clr-white-100--);
     min-width: 150px;
-    box-shadow: 0px 8px 16px 0px var(--clr-grey-50--);
     z-index: 1;
     cursor: pointer;
     border-radius: 16px;

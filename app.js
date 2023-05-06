@@ -8,7 +8,6 @@ function changeFont(font) {
         inputFont.style.fontFamily = "Inter, sans-serif"
         fontName.style.fontFamily = "Inter, sans-serif"
         fontName.textContent = "Sans-Serif"
-
     } else if (font === "serif") {
         bodyFont.style.fontFamily = "Lora, serif"
         inputFont.style.fontFamily = "Lora, serif"
@@ -20,4 +19,8 @@ function changeFont(font) {
         fontName.style.fontFamily = "Inconsolata, mono"
         fontName.textContent = "Mono"
     }
+}
+function toggleTheme() {
+    let element = document.body;
+    element.classList.toggle("dark_theme");
 }

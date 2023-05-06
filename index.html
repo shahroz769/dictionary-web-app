@@ -22,16 +22,16 @@
             </div>
             <div class="theme">
                 <div class="dropdown">
-                    <button class="dropbtn" id="fontName">Sans Serif</button>
+                    <button class="dropbtn" id="fontName">Sans-Serif</button>
                     <div class="dropdown-content">
-                        <p onclick="changeFont('sansSerif')" class="sans">Sans Serif</p>
+                        <p onclick="changeFont('sansSerif')" class="sans">Sans-Serif</p>
                         <p onclick="changeFont('serif')" class="serif">Serif</p>
                         <p onclick="changeFont('mono')" class="mono">Mono</p>
                     </div>
                 </div>
                 <div><img src="./images/icon-arrow-down.svg" alt="Down Arrow"></div>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input onclick="toggleTheme()" type="checkbox">
                     <span class="slider round"></span>
                 </label>
                 <div class="theme-icon">
