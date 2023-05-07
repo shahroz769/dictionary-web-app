@@ -26,9 +26,9 @@
     --clr-black-75--: #757575;
     --clr-black-50--: #E9E9E9;
     --clr-black-25--: #F4F4F4;
-    --clr-white-100--: #050505;
+    --clr-white-100--: #141625;
     --clr-grey-75--: #FFFFFF;
-    --clr-grey-25--: #3A3A3A;
+    --clr-grey-25--: #19202D;
 }
 
 * {
@@ -169,7 +169,7 @@ form input {
 }
 
 .grey {
-    color: var(--clr-grey-75--);
+    color: var(--clr-black-100--)
 }
 
 .head {
@@ -330,7 +330,7 @@ input:checked+.slider:before {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    width: 121.05px;
+    width: 124px;
     white-space: nowrap;
 }
 
@@ -393,6 +393,11 @@ input:checked+.slider:before {
     h1 {
         font-size: 32px;
         line-height: 1;
+    }
+
+    .dropbtn {
+        width: 90px;
+        padding: 8px;
     }
 
     .sound img {
