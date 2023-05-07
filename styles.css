@@ -37,7 +37,6 @@
     box-sizing: border-box;
     font-weight: 400;
     -webkit-tap-highlight-color: transparent;
-    outline: 1px solid red;
     max-width: 800px;
     margin: 0 auto;
 
