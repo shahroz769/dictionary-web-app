@@ -41,62 +41,74 @@
             </div>
         </div>
         <form class="search" onsubmit="search(); return false">
-            <input id="inputText" autocomplete="off" type="text" spellcheck="false" placeholder="Search word..." required>
-            <div onclick="search(); return false" class="search-icon"><img src="./images/icon-search.svg" alt="Search Icon"></div>
+            <input id="inputText" autocomplete="off" type="text" spellcheck="false" placeholder="Search word..."
+                required>
+            <div onclick="search(); return false" class="search-icon"><img src="./images/icon-search.svg"
+                    alt="Search Icon"></div>
         </form>
-        <div class="title">
-            <div class="word">
-                <h1 id="wordText">keyboard</h1>
-                <h2 id="phoneticText">/ˈkiːbɔːd/</h2>
+        <p id="errormsg">No result found</p>
+        <div id="default"><img src="./images/default.svg" alt="Dictionary Illustration"></div>
+        <div id="error"><img src="./images/error.svg" alt="Error Illustration"></div>
+        <div id="allcontent">
+            <div class="title">
+                <div class="word">
+                    <h1 id="wordText">keyboard</h1>
+                    <h2 id="phoneticText">/ˈkiːbɔːd/</h2>
+                </div>
+                <div id="audioImg" onclick="playAudio()" class="sound">
+                    <img src="./images/icon-play.svg" alt="Audio Play Icon">
+                    <audio id="audio">
+                        <source id="audioSrc" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
             </div>
-            <div id="audioImg" onclick="playAudio()" class="sound">
-                <img src="./images/icon-play.svg" alt="Audio Play Icon">
-                <audio id="audio">
-                    <source id="audioSrc" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
+            <div class="noun">
+                <div>
+                    <h2 class="mobile-18">noun</h2>
+                    <hr>
+                </div>
+                <h3 class="grey" id="meaning">Meaning</h3>
+                <ul>
+                    <li id="definitionOne">(etc.) A set of keys used to operate a typewriter, computer etc.</li>
+                    <li id="definitionTwo">A component of many instruments including the piano, organ, and harpsichord
+                        consisting of usually
+                        black
+                        and white keys that cause different tones to be produced when struck.</li>
+                    <li id="definitionThree">A device with keys of a musical keyboard, used to control electronic
+                        sound-producing devices which
+                        may
+                        be built into or separate from the keyboard device.</li>
+                </ul>
+                <div id="syn-div" class="synonyms">
+                    <h3 class="grey">Synonyms</h3>
+                    <h3 id="synonyms">electronic keyboard</h3>
+                </div>
             </div>
-        </div>
-        <div class="noun">
-            <div>
-                <h2 class="mobile-18">noun</h2>
-                <hr>
+            <div id="verb" class="verb">
+                <div>
+                    <h2 class="mobile-18">verb</h2>
+                    <hr>
+                </div>
+                <h3 class="grey" id="meaning">Meaning</h3>
+                <ul>
+                    <li id="definitionFour">To type on a computer keyboard.</li>
+                </ul>
+                <!-- <p id="example" class="grey">"Keyboarding is the part of this job I hate the most.”</p> -->
             </div>
-            <h3 class="grey" id="meaning">Meaning</h3>
-            <ul>
-                <li>(etc.) A set of keys used to operate a typewriter, computer etc.</li>
-                <li>A component of many instruments including the piano, organ, and harpsichord consisting of usually
-                    black
-                    and white keys that cause different tones to be produced when struck.</li>
-                <li>A device with keys of a musical keyboard, used to control electronic sound-producing devices which
-                    may
-                    be built into or separate from the keyboard device.</li>
-            </ul>
-            <div class="synonyms">
-                <h3 class="grey">Synonyms</h3>
-                <h3 id="synonyms">electronic keyboard</h3>
+            <hr id="source-hr">
+            <div class="source">
+                <p class="grey">Source</p>
+                <p><a id="sourceUrl" href="https://en.wiktionary.org/wiki/keyboard"
+                        target="_blank">https://en.wiktionary.org/wiki/keyboard</a><a id="sourceUrlImg"
+                        href="https://en.wiktionary.org/wiki/keyboard" target="_blank"><img
+                            src="./images/icon-new-window.svg" alt="Source Icon"></a></p>
             </div>
-        </div>
-        <div class="verb">
-            <div>
-                <h2 class="mobile-18">verb</h2>
-                <hr>
-            </div>
-            <h3 class="grey" id="meaning">Meaning</h3>
-            <ul>
-                <li>To type on a computer keyboard.</li>
-            </ul>
-            <p class="grey">"Keyboarding is the part of this job I hate the most.”</p>
-        </div>
-        <hr id="source-hr">
-        <div class="source">
-            <p class="grey">Source</p>
-            <p href="https://en.wiktionary.org/wiki/keyboard">https://en.wiktionary.org/wiki/keyboard<img
-                    src="./images/icon-new-window.svg" alt="Source Icon"></p>
         </div>
     </div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="./app.js"></script>
+
 </html>
