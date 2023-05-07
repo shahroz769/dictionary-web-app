@@ -14,9 +14,9 @@ function changeFont(font) {
         fontName.style.fontFamily = "Lora, serif"
         fontName.textContent = "Serif"
     } else if (font === "mono") {
-        bodyFont.style.fontFamily = "Inconsolata, mono"
-        inputFont.style.fontFamily = "Inconsolata, mono"
-        fontName.style.fontFamily = "Inconsolata, mono"
+        bodyFont.style.fontFamily = "Space Mono, mono"
+        inputFont.style.fontFamily = "Space Mono, mono"
+        fontName.style.fontFamily = "Space Mono, mono"
         fontName.textContent = "Mono"
     }
 }
