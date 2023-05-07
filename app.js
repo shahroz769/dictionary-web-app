@@ -7,7 +7,6 @@ function changeFont(font) {
     let bodyFont = document.getElementsByTagName('body')[0]
     let inputFont = document.getElementById('inputText')
     let fontName = document.getElementById('fontName')
-    console.log(fontName)
     if (font === "sansSerif") {
         bodyFont.style.fontFamily = "Inter, sans-serif"
         inputFont.style.fontFamily = "Inter, sans-serif"
@@ -54,7 +53,6 @@ function search() {
             pandaError.style.display = "none"
             errorMsg.style.display = "none"
             wordText.innerHTML = response.data[0].word
-            console.log("Error nhi Aya hai...")
             if (response.data[0].phonetics.length == 0) {
                 phoneticText.style.display = "none"
             } else {
@@ -70,7 +68,6 @@ function search() {
                     phoneticText.style.display = "none"
                 }
             }
-            console.log("Error nhi Aya hai...")
             if (response.data[0].phonetics.length == 0) {
                 audioImg.style.display = "none"
             } else {
@@ -90,11 +87,9 @@ function search() {
                 } else if (response.data[0].phonetics[5] && response.data[0].phonetics[5].audio) {
                     audio.src = response.data[0].phonetics[2].audio;
                 } else {
-                    console.log('No audio URLs found in the response data.');
                     audioImg.style.display = "none"
                 }
             }
-            console.log("Error nhi Aya hai...")
             let length = response.data[0].meanings[0].definitions.length
             if (length == 1) {
                 definitionOne.style.display = "block"
