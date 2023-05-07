@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -39,17 +40,21 @@
                 </div>
             </div>
         </div>
-        <form class="search" autocomplete="off" onsubmit="search(); return false">
-            <input id="inputText" type="text" spellcheck="false" placeholder="Search word..." required>
-            <div class="search-icon"><img src="./images/icon-search.svg" alt="Search Icon"></div>
+        <form class="search" onsubmit="search(); return false">
+            <input id="inputText" autocomplete="off" type="text" spellcheck="false" placeholder="Search word..." required>
+            <div onclick="search(); return false" class="search-icon"><img src="./images/icon-search.svg" alt="Search Icon"></div>
         </form>
         <div class="title">
             <div class="word">
-                <h1>keyboard</h1>
-                <h2>/ˈkiːbɔːd/</h2>
+                <h1 id="wordText">keyboard</h1>
+                <h2 id="phoneticText">/ˈkiːbɔːd/</h2>
             </div>
-            <div class="sound">
+            <div id="audioImg" onclick="playAudio()" class="sound">
                 <img src="./images/icon-play.svg" alt="Audio Play Icon">
+                <audio id="audio">
+                    <source id="audioSrc" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
             </div>
         </div>
         <div class="noun">
@@ -92,6 +97,6 @@
     </div>
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="./app.js"></script>
-
 </html>
