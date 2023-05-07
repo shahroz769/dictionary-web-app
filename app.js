@@ -91,6 +91,7 @@ function search() {
                     audio.src = response.data[0].phonetics[2].audio;
                 } else {
                     console.log('No audio URLs found in the response data.');
+                    audioImg.style.display = "none"
                 }
             }
             console.log("Error nhi Aya hai...")

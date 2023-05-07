@@ -386,6 +386,7 @@ input:checked+.slider:before {
     display: none;
     position: absolute;
     background-color: var(--clr-white-100--);
+    outline: 1px solid var(--clr-purple--);
     min-width: 150px;
     z-index: 1;
     cursor: pointer;
