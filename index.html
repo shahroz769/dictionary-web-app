@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png"> 
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -43,8 +43,11 @@
         <form class="search" onsubmit="search(); return false">
             <input id="inputText" autocomplete="off" type="text" spellcheck="false" placeholder="Search word..."
                 required>
-            <div onclick="search(); return false" class="search-icon"><img src="./images/icon-search.svg"
-                    alt="Search Icon"></div>
+            <button onclick="search(); return false" type="submit">
+                <p id="button">Search</p>
+            </button>
+            <!-- <div onclick="search(); return false" class="search-icon"><img src="./images/icon-search.svg"
+                    alt="Search Icon"></div> -->
         </form>
         <p id="errormsg">No result found</p>
         <div id="default"><img src="./images/default.svg" alt="Dictionary Illustration"></div>
@@ -92,9 +95,7 @@
             <hr id="source-hr">
             <div class="source">
                 <p class="grey">Source</p>
-                <p><a id="sourceUrl" href=""
-                        target="_blank"></a><a id="sourceUrlImg"
-                        href="" target="_blank"><img
+                <p><a id="sourceUrl" href="" target="_blank"></a><a id="sourceUrlImg" href="" target="_blank"><img
                             src="./images/icon-new-window.svg" alt="Source Icon"></a></p>
             </div>
         </div>
