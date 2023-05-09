@@ -2,7 +2,6 @@ function toggleTheme() {
     let element = document.body;
     element.classList.toggle("dark_theme");
 }
-
 function changeFont(font) {
     let bodyFont = document.getElementsByTagName('body')[0]
     let inputFont = document.getElementById('inputText')
@@ -28,7 +27,6 @@ function changeFont(font) {
         fontName.textContent = "Mono"
     }
 }
-
 function search() {
     let userInput = document.getElementById('inputText').value
     let wordText = document.getElementById('wordText')
@@ -153,10 +151,17 @@ function search() {
             errorMsg.style.display = "block"
         })
 }
-
 function playAudio() {
     let audio = document.getElementById('audio')
     if (audio.paused || audio.ended) {
         audio.play();
+    }
+}
+function fieldStyle(event) {
+    let form = document.getElementById("form")
+    if (event === 'focus') {
+        form.style.outline = "1px solid #A445ED"
+    } else {
+        form.style.outline = "none"
     }
 }

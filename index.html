@@ -40,9 +40,9 @@
                 </div>
             </div>
         </div>
-        <form class="search" onsubmit="search(); return false">
-            <input id="inputText" autocomplete="off" type="text" spellcheck="false" placeholder="Search word..."
-                required>
+        <form id="form" class="search" onsubmit="search(); return false">
+            <input onfocus="fieldStyle('focus')" onblur="fieldStyle('blur')" id="inputText" autocomplete="off"
+                type="text" spellcheck="false" placeholder="Search word..." required>
             <button onclick="search(); return false" type="submit">
                 <p id="button">Search</p>
             </button>
